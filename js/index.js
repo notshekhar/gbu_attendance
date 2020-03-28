@@ -1,15 +1,16 @@
+const URL = "https://raw.githubusercontent.com/notshekhar/gbu_attendance/master/images/"
 let images = [
-    "../images/_dsf8951.jpg",
-    "../images/_dsf8963.jpg",
-    "../images/_dsf8982.jpg",
-    "../images/_dsf8724a.jpg"
+    "_dsf8951.jpg",
+    "_dsf8963.jpg",
+    "_dsf8982.jpg",
+    "_dsf8724a.jpg"
 ]
 let i = 1
 let im = images[0]
 
 setInterval(() => {
     im = images[i]
-    cssv("im", `url(${im})`)
+    cssv("im", `url(${URL+im})`)
     i++
     if (i == images.length) i = 0
 }, 3000)
